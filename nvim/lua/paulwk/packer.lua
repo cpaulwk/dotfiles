@@ -47,4 +47,7 @@ return require('packer').startup(function(use)
     }
   }
   use 'wakatime/vim-wakatime'
+
+    -- Linters & formatters
+  use 'jose-elias-alvarez/null-ls.nvim'
 end)
