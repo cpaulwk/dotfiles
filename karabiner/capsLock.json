@@ -1,0 +1,29 @@
+{
+  "title": "Caps Lock is Shift/ Escape",
+  "rules": [
+    {
+      "description": "Swap Caps Lock with Left Shift but Escapes when pressed alone",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_shift"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
