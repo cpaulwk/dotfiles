@@ -6,14 +6,6 @@ lsp.ensure_installed({
   'tsserver',
 })
 
--- LSP actions
-vim.keymap.set("n", "<leader>j", "<Cmd>lua vim.diagnostic.goto_next()<CR>")
-vim.keymap.set("n", "<leader>k", "<Cmd>lua vim.diagnostic.goto_prev()<CR>")
-vim.keymap.set("n", "<leader>r", "<Cmd>lua vim.lsp.buf.rename()<CR>")
-vim.keymap.set("n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>")
-vim.keymap.set("n", "K", "<Cmd>lua vim.lsp.buf.hover()<CR>")
-vim.keymap.set("n", "=g", "<Cmd>lua vim.lsp.buf.formatting()<CR>")
-
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({

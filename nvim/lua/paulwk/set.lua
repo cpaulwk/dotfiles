@@ -2,7 +2,7 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.expandtab = true
 
-vim.opt.nu =true
+vim.opt.nu = true
 vim.opt.relativenumber = true
 
 vim.opt.smartindent = true
@@ -24,4 +24,4 @@ vim.opt.foldlevelstart = 99
 -- Open other buffers without saving current one
 vim.opt.hidden = true
 
-vim.g.mapleader = " " 
+vim.g.mapleader = " "
